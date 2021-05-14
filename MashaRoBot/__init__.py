@@ -19,6 +19,7 @@ logging.basicConfig(
 )
 
 LOGGER = logging.getLogger(__name__)
+LOG_GROUP_ID = os.environ.get("LOG_GROUP_ID", None)
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
